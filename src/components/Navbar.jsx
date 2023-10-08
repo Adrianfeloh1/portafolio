@@ -21,7 +21,7 @@ export const Navbar = () => {
     const toggleNav = () => setNav(!nav);
 
     return (
-        <nav className="w-screen h-[110px] z-10 bg-[#10222E] fixed drop-shadow-lg">
+        <nav className="w-screen h-[110px] bg-[#10222E] drop-shadow-lg">
             <div className="px-2 flex justify-between items-center w-full h-full">
                 <div className="mx-2 w-full flex justify-between md:mx-6">
                     <img className="w-40 font-bold mr-4 sm:w-48" src={logo} alt="mi imagen" />
