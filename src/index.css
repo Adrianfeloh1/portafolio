@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    li {
+        padding: 1.5em;     
+        cursor: pointer; 
+        color: #c2c2c2;  
+    }
+
+    li:hover{
+        color: #FEFFFF;
+    }
+}
+
