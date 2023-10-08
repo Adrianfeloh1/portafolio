@@ -7,11 +7,9 @@ export const App = () => {
 
 
   return (
-    <div>
-      
+    <>
       <Navbar />
-      <Hero />   
-         
-    </div>
+      <Hero />
+    </>
   )
 }
