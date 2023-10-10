@@ -1,10 +1,10 @@
-import hero from "../assets/desk.jpg";
+import hero from "../assets/coffee1.jpg";
 
 export const Hero = () => {
 
     return (
 
-        <main className="relative h-[780px] pt-24">
+        <main className="relative h-[800px] pt-24">
             <img
                 src={hero}
                 alt="Imagen hero"
@@ -16,11 +16,11 @@ export const Hero = () => {
             {/* Contenedor del contenido centrado */}
             <section className="absolute inset-0 flex flex-col items-center justify-center text-white">
                 <h1 className="text-4xl md:text-6xl font-bold text-center mb-3">
-                    Hello, There!
+                    HELLO, THERE!
                 </h1>
                 <article>
                     <p className="text-lg mx-5 md:text-2xl text-center min-w-min ">
-                        I'm Adrian F, Developer and UX Designer passionate about creating digital experiences
+                        I'm Adrian F. Ochoa H, Developer and UX Designer passionate about creating digital experiences
                     </p>
                 </article>
             </section>
