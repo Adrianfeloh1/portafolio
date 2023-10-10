@@ -4,11 +4,11 @@ export const About = () => {
 
     return (
 
-        <section className="px-2 flex items-center h-[750px] bg-[#10222E] ">
+        <section className="md:flex justify-center items-center md:h-[750px] bg-[#10222E] ">
 
-            <article className="flex flex-col justify-center bg-[#F55138] ml-8 h-[650px] w-[850px]">
-                <div className="mr-12 p-8">
-                    <h2 className="mb-8">About</h2>
+            <article className="  md:flex flex-col justify-center bg-[#f55138e0] md:ml-8 md:h-[650px] md:w-[850px]">
+                <div className="md:mr-12 p-8">
+                    <h2 className=" text-3xl mb-8">About</h2>
                     <p>As a web developer and user experience (UX) designer,
                         I find myself at the intersection of technology and design,
                         where creativity meets functionality. My passion lies in creating
@@ -22,7 +22,7 @@ export const About = () => {
             </article>
 
             <div>
-                <img className="relative right-16 max-h-[600px]" src={profile} alt="Image profile" />
+                <img className="  md:relative md:right-16 md:max-h-[600px]" src={profile} alt="Image profile" />
             </div>
 
         </section>
