@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+
+    body{
+        background-color: #272727;
+    }
+
     li {
         padding: 1.8rem;
         cursor: pointer;

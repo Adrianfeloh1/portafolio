@@ -1,10 +1,10 @@
-import profile from "../assets/adrian.jpg";
+import profile from "../assets/adrian3.jpg";
 
 export const About = () => {
 
     return (
 
-        <section className=" md:flex md:justify-center md:items-center md:h-[750px] bg-[#10222E] ">
+        <section className=" md:flex md:justify-center md:items-center md:h-[750px] bg-[#171717] ">
 
             <article className=" sm:h-[400px] md:flex flex-col justify-center bg-[#f55138e0] md:ml-8 md:h-[650px] md:w-[850px]">
                 <div className="p-16 md:mr-24 ">

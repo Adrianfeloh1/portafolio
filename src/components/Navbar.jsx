@@ -21,10 +21,12 @@ export const Navbar = () => {
     const toggleNav = () => setNav(!nav);
 
     return (
-        <nav className="w-screen h-[110px] z-10 bg-[#10222E] absolute drop-shadow-lg">
-            <div className="px-2 flex justify-between items-center w-full h-full">
-                <div className="mx-2 w-full flex justify-between md:mx-6">
-                    <img className="w-40 font-bold mr-4 sm:w-48" src={logo} alt="mi imagen" />
+        <nav className="w-screen h-[100px] z-10 absolute drop-shadow-lg">
+            <div className="pr-8 pl-2 sm:px-2 flex items-center w-full h-full">
+                <div className="ml-12 w-full flex justify-center sm:justify-between md:mx-6">
+
+                    <img className="w-40 md:w-48" src={logo} alt="mi imagen" />
+
                     <ul className="text-[#FEFFFF] hidden sm:flex">
                         <li>Home</li>
                         <li>About</li>
@@ -38,7 +40,7 @@ export const Navbar = () => {
                 </div>
             </div>
             {/* Si cambiamos el icono a menú, entonces esconder todo el UL; si está cerrado, entonces mostrar */}
-            <ul className={!nav ? "hidden" : "absolute w-full text-center bg-[#10222E] px-10 -mt-5 pb-7"}>
+            <ul className={!nav ? "hidden" : "absolute w-full text-center bg-[#171717] px-10 -mt-5 pb-7"}>
                 <li className="border-[#c2c2c2] py-4">Home</li>
                 <li className="border-[#c2c2c2] py-4">About</li>
                 <li className="border-[#c2c2c2] py-4">Works</li>
