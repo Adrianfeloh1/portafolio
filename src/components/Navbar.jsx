@@ -28,10 +28,10 @@ export const Navbar = () => {
                     <img className="w-40 md:w-48" src={logo} alt="mi imagen" />
 
                     <ul className="text-[#FEFFFF] hidden sm:flex">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Works</li>
-                        <li>Contact</li>
+                        <li>Home </li>
+                        <li>About </li>
+                        <li>Works </li>
+                        <li>Contact </li>
                     </ul>
                 </div>
                 <div className="sm:hidden" onClick={toggleNav}>
