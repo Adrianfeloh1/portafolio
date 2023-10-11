@@ -4,10 +4,10 @@ export const About = () => {
 
     return (
 
-        <section className="md:flex justify-center items-center md:h-[750px] bg-[#10222E] ">
+        <section className=" md:flex md:justify-center md:items-center md:h-[750px] bg-[#10222E] ">
 
-            <article className="  md:flex flex-col justify-center bg-[#f55138e0] md:ml-8 md:h-[650px] md:w-[850px]">
-                <div className="md:mr-12 p-8">
+            <article className=" sm:h-[400px] md:flex flex-col justify-center bg-[#f55138e0] md:ml-8 md:h-[650px] md:w-[850px]">
+                <div className="p-16 md:mr-24 ">
                     <h2 className=" text-3xl mb-8">About</h2>
                     <p>As a web developer and user experience (UX) designer,
                         I find myself at the intersection of technology and design,
@@ -22,7 +22,7 @@ export const About = () => {
             </article>
 
             <div>
-                <img className="  md:relative md:right-16 md:max-h-[600px]" src={profile} alt="Image profile" />
+                <img className=" m-auto max-h-[500px] sm:relative sm:bottom-16 md:relative md:bottom-0 md:right-32 md:max-h-[550px]" src={profile} alt="Image profile" />
             </div>
 
         </section>

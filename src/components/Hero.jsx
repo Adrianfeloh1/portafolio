@@ -4,7 +4,7 @@ export const Hero = () => {
 
     return (
 
-        <main className="relative h-[800px] pt-24">
+        <main className="relative h-[550px] pt-24 sm:relative sm:h-[800px]">
             <img
                 src={hero}
                 alt="Imagen hero"

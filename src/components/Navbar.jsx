@@ -38,7 +38,7 @@ export const Navbar = () => {
                 </div>
             </div>
             {/* Si cambiamos el icono a menú, entonces esconder todo el UL; si está cerrado, entonces mostrar */}
-            <ul className={!nav ? "hidden" : "absolute w-full text-center bg-[#10222E] px-10 -mt-5 pb-4"}>
+            <ul className={!nav ? "hidden" : "absolute w-full text-center bg-[#10222E] px-10 -mt-5 pb-7"}>
                 <li className="border-[#c2c2c2] py-4">Home</li>
                 <li className="border-[#c2c2c2] py-4">About</li>
                 <li className="border-[#c2c2c2] py-4">Works</li>
