@@ -4,7 +4,7 @@
 
 @layer base {
 
-    body{
+    body {
         background-color: #272727;
     }
 
@@ -22,16 +22,15 @@
 
     h1,
     h2,
-    h3, 
-    p{
+    h3,
+    p {
         font-family: 'Montserrat', sans-serif;
-        color: #ffffff;        
+        color: #ffffff;
     }
 
     p {
         font-family: 'Nunito', sans-serif;
         font-weight: 300;
     }
-    
 }
 

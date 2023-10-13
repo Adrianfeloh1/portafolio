@@ -3,7 +3,6 @@ import hero from "../assets/coffee1.jpg";
 export const Hero = () => {
 
     return (
-
         <main className="relative h-[550px] pt-24 sm:relative sm:h-[800px]">
             <img
                 src={hero}

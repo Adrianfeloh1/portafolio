@@ -2,6 +2,7 @@
 import { Navbar } from "./components/Navbar"
 import { Hero } from "./components/Hero"
 import { About } from "./components/About"
+import { Works } from "./components/Works"
 
 
 export const App = () => {
@@ -12,6 +13,7 @@ export const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Works />
     </>
   )
 }

@@ -23,7 +23,7 @@ export const Navbar = () => {
     return (
         <nav className="w-screen h-[100px] z-10 absolute drop-shadow-lg">
             <div className="pr-8 pl-2 sm:px-2 flex items-center w-full h-full">
-                <div className="ml-12 w-full flex justify-center sm:justify-between md:mx-6">
+                <div className="ml-12 w-full flex justify-center sm:justify-between sm:mx-12 md:mr-32">
 
                     <img className="w-40 md:w-48" src={logo} alt="mi imagen" />
 
