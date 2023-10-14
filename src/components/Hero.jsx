@@ -5,7 +5,7 @@ import { Fade } from "react-awesome-reveal";
 export const Hero = () => {
 
     return (
-        <main className="relative h-[550px] pt-24 sm:relative sm:h-[850px]">
+        <section className="relative h-[550px] pt-24 sm:relative md:h-[850px]">
             <img
                 src={hero}
                 alt="Imagen hero"
@@ -28,7 +28,7 @@ export const Hero = () => {
                     </p>
                 </article>
             </section>
-        </main>
+        </section>
 
     )
 }

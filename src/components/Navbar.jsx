@@ -23,7 +23,7 @@ export const Navbar = () => {
     return (
         <nav className="w-screen h-[100px] z-10 absolute drop-shadow-lg">
             <div className="pr-8 pl-2 sm:px-2 flex items-center w-full h-full">
-                <div className="ml-12 w-full flex justify-center sm:justify-between sm:mx-12 md:mr-32">
+                <div className="ml-12 w-full flex justify-center sm:justify-between sm:mx-12 md:mr-20">
 
                     <img className="w-40 md:w-48" src={logo} alt="mi imagen" />
 
@@ -40,7 +40,7 @@ export const Navbar = () => {
                 </div>
             </div>
             {/* Si cambiamos el icono a menú, entonces esconder todo el UL; si está cerrado, entonces mostrar */}
-            <ul className={!nav ? "hidden" : "absolute w-full text-center bg-[#171717] px-10 -mt-5 pb-7"}>
+            <ul className={!nav ? "hidden" : "absolute w-full text-center bg-[#171717] px-10 -mt-3 pb-7"}>
                 <li className="border-[#c2c2c2] py-4">Home</li>
                 <li className="border-[#c2c2c2] py-4">About</li>
                 <li className="border-[#c2c2c2] py-4">Works</li>

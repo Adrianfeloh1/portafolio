@@ -22,11 +22,10 @@ export const Works = () => {
     return (
         <section className="px-5 sm:px-10 bg-[#171717]">
             <h2 className="text-center text-2xl mb-7">[  WORKS  ]</h2>
-            <div className="sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-5 py-5 pb-32">
+            <div className="sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-5 py-5 pb-20">
                 {images.map((image, index) => (
                     <div key={index}
-                        className={`relative overflow-hidden group mb-5  ${index % 2 === 0 ? 'bg-[#171717]' : 'bg-[#f5513881]'
-                            }`}>
+                        className="relative overflow-hidden group bg-[#171717]">
                         <img
                             src={image}
                             alt={`Image ${index}`}
