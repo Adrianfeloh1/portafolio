@@ -10,7 +10,9 @@ export const Navbar = () => {
         if (window.innerWidth >= 640) {
             setNav(false);
         }
-    };
+    }
+
+    const handleClose = () => setNav(!nav);
 
     useEffect(() => {
         window.addEventListener("resize", handleWindowResize);
@@ -22,7 +24,7 @@ export const Navbar = () => {
     const toggleNav = () => setNav(!nav);
 
     return (
-        <nav className="w-screen h-[100px] z-10 absolute drop-shadow-lg">
+        <nav className="w-screen h-[120px] z-10 fixed bg-[#171717] drop-shadow-2xl">
             <div className="pr-8 pl-2 sm:px-2 flex items-center w-full h-full">
                 <div className="ml-12 w-full flex justify-center sm:justify-between sm:mx-12 md:mr-20">
 
@@ -30,10 +32,10 @@ export const Navbar = () => {
 
                     <ul className="text-[#FEFFFF] hidden sm:flex">
 
-                        <li><Link className=" cursor-pointer py-5" to="home" smooth={true} offset={50} duration={300}>Home</Link></li>
-                        <li><Link className=" cursor-pointer py-5" to="about" smooth={true} offset={50} duration={600}>About</Link></li>
-                        <li><Link className=" cursor-pointer py-5" to="works" smooth={true} offset={50} duration={800}>Works</Link></li>
-                        <li><Link className=" cursor-pointer py-5" to="contact" smooth={true} offset={50} duration={1000}>Contact</Link></li>
+                        <li><Link className=" cursor-pointer py-5" to="home" smooth={true} offset={-10} duration={600}>Home</Link></li>
+                        <li><Link className=" cursor-pointer py-5" to="about" smooth={true} offset={-110} duration={600}>About</Link></li>
+                        <li><Link className=" cursor-pointer py-5" to="works" smooth={true} offset={-150} duration={800}>Works</Link></li>
+                        <li><Link className=" cursor-pointer py-5" to="contact" smooth={true} offset={-140} duration={1000}>Contact</Link></li>
 
                     </ul>
                 </div>
@@ -43,11 +45,13 @@ export const Navbar = () => {
                 </div>
             </div>
             {/* Si cambiamos el icono a menú, entonces esconder todo el UL; si está cerrado, entonces mostrar */}
-            <ul className={!nav ? "hidden" : "absolute w-full text-center bg-[#171717] px-10 -mt-3 pb-7"}>
-                <li className="border-[#c2c2c2] py-4">Home</li>
-                <li className="border-[#c2c2c2] py-4">About</li>
-                <li className="border-[#c2c2c2] py-4">Works</li>
-                <li className="border-[#c2c2c2] py-4">Contact</li>
+            <ul className={!nav ? "hidden" : "w-full text-center bg-[#171717] px-10 -mt-3 pb-7"}>
+
+                        <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="home" smooth={true} offset={-10} duration={600}>Home</Link></li>
+                        <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="about" smooth={true} offset={-110} duration={600}>About</Link></li>
+                        <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="works" smooth={true} offset={-150} duration={800}>Works</Link></li>
+                        <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="contact" smooth={true} offset={-120} duration={1000}>Contact</Link></li>
+                
             </ul>
         </nav>
     );

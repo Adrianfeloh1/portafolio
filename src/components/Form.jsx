@@ -7,7 +7,7 @@ export const Form = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <section name="contact" className=" bg-[#171717] flex flex-col md:flex md:flex-row justify-center items-center px-10 pb-20">
+        <section name="contact" className=" bg-[#171717] flex flex-col md:flex md:flex-row justify-center items-center md:pt-10 px-10 md:pb-32 pb-20">
 
             <article className=" flex flex-col w-2/2 md:w-1/2 text-center md:px-8 lg:px-20">
                 <h2 className=" md:text-2xl lg:text-4xl mb-5 lg:mb-10 uppercase text-[white]">
@@ -17,7 +17,7 @@ export const Form = () => {
                     on your project. Please, complete the following form with your contact details. I will get
                     back to you as soon as possible to discuss how I can assist you in developing your website.
                 </p>
-                <h3 className="mb-2 md:text-lg lg:text-2xl">E-mail</h3>
+                <h3 className="sm:mb-2 md:text-lg lg:text-2xl">E-mail</h3>
                 <p className=" text-[#c2c2c2]">adrianfeloh1@gmail.com</p>
                 <div className="mt-4 mb-4 md:mb-16 text-2xl flex justify-center items-center gap-4 text-[white]">
                     <GrLinkedin />
