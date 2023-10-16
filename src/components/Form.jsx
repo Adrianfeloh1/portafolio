@@ -7,7 +7,7 @@ export const Form = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <section className=" bg-[#171717] flex flex-col md:flex md:flex-row justify-center items-center px-10 pb-20">
+        <section name="contact" className=" bg-[#171717] flex flex-col md:flex md:flex-row justify-center items-center px-10 pb-20">
 
             <article className=" flex flex-col w-2/2 md:w-1/2 text-center md:px-8 lg:px-20">
                 <h2 className=" md:text-2xl lg:text-4xl mb-5 lg:mb-10 uppercase text-[white]">
@@ -29,7 +29,7 @@ export const Form = () => {
 
             </article>
 
-            <form action="" className=" bg-[#171717] flex flex-col w-full md:w-1/2 px-10 lg:px-20 border-8 p-10 text-[white] ">
+            <form action="" className=" bg-[#171717] flex flex-col w-full md:w-1/2 px-5 sm:px-10 lg:px-20 border-8 p-10 text-[white] ">
                 <h2 className=" md:text-2xl lg:text-4xl text-center mb-8 text-[#f55138e0]">CONTACT FORM</h2>
 
                 <label htmlFor="name" className="mb-2">Your Name</label>

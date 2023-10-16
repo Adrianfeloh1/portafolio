@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { RiMenu3Line, RiCloseFill } from "react-icons/ri";
 import logo from "../assets/logo.png";
 
@@ -28,10 +29,12 @@ export const Navbar = () => {
                     <img className="w-40 md:w-48" src={logo} alt="mi imagen" />
 
                     <ul className="text-[#FEFFFF] hidden sm:flex">
-                        <li>Home </li>
-                        <li>About </li>
-                        <li>Works </li>
-                        <li>Contact </li>
+
+                        <li><Link className=" cursor-pointer py-5" to="home" smooth={true} offset={50} duration={300}>Home</Link></li>
+                        <li><Link className=" cursor-pointer py-5" to="about" smooth={true} offset={50} duration={600}>About</Link></li>
+                        <li><Link className=" cursor-pointer py-5" to="works" smooth={true} offset={50} duration={800}>Works</Link></li>
+                        <li><Link className=" cursor-pointer py-5" to="contact" smooth={true} offset={50} duration={1000}>Contact</Link></li>
+
                     </ul>
                 </div>
                 <div className="sm:hidden" onClick={toggleNav}>

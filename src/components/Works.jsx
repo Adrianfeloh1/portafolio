@@ -20,7 +20,7 @@ export const Works = () => {
     ];
 
     return (
-        <section className="px-5 sm:px-10 bg-[#171717]">
+        <section name="works" className="px-5 sm:px-10 bg-[#171717]">
             <h2 className="text-center text-2xl mb-7">[  WORKS  ]</h2>
             <div className="grid sm:grid-cols-2 lg:grid lg:grid-cols-3 gap-5 py-5 pb-20">
                 {images.map((image, index) => (
