@@ -13,7 +13,7 @@ export const Form = () => {
                 <h2 className=" md:text-2xl lg:text-4xl mb-5 lg:mb-10 uppercase text-[white]">
                     Let's Discuss Your Project!
                 </h2>
-                <p className="mb-10 text-[#c2c2c2]"> I'm thrilled about the opportunity to collaborate
+                <p className="sm:mb-10 mb-5 text-[#c2c2c2]"> I'm thrilled about the opportunity to collaborate
                     on your project. Please, complete the following form with your contact details. I will get
                     back to you as soon as possible to discuss how I can assist you in developing your website.
                 </p>
