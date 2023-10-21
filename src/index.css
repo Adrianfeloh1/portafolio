@@ -9,7 +9,7 @@
     }
 
     li {
-        padding: 1.5rem;
+        padding: 1.2rem;
         color: #c2c2c2;
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
@@ -30,6 +30,5 @@
     p {
         font-family: 'Nunito', sans-serif;
         font-weight: 300;
-    }
-
+    }    
 }
