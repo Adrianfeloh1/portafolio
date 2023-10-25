@@ -3,7 +3,6 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Works } from './components/Works';
 import { Form } from './components/Form';
-import { Language } from './components/Language';
 
 export const App = () => {
 

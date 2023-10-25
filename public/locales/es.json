@@ -1,7 +1,18 @@
 {
     "hello": "Hola a todos!",
     "home": "Inicio",
-    "about": "Acerca de",
+    "about": "Acerca",
+    "aboutme": "Acerca de mi",
     "works": "Trabajos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "hero":"Soy Adrián F. Ochoa H, Desarrollador y Diseñador UX apasionado por crear experiencias digitales",
+    "p-about": "Como desarrollador web y diseñador de experiencia de usuario (UX), me encuentro en la intersección de la tecnología y el diseño, donde la creatividad se encuentra con la funcionalidad. Mi pasión radica en crear productos digitales que no sólo sean visualmente atractivos sino también altamente intuitivos y fáciles de usar. Con una base sólida en el desarrollo de aplicaciones web y un profundo conocimiento de los principios del diseño centrado en el usuario, mi objetivo es crear soluciones que mejoren la vida de las personas y aborden los desafíos de manera efectiva.",
+    "discuss": "HABLEMOS DE TU PROYECTO!",
+    "p-discuss": "Me alegraría saber cómo puedo colaborar en tu proyecto. Por favor completa el siguiente formulario con tu información de contacto. Me pondré en contacto contigo lo antes posible para hablar sobre el desarrollo de tu sitio web.",
+    "all-rights": "Todos los derechos reservados.",
+    "contant-form": "FORMULARIO DE CONTACTO",
+    "YourName": "Tu nombre",
+    "email": "Correo",
+    "helpYou":"Cómo puedo ayudarte?",
+    "send": "ENVIAR"
 }

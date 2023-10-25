@@ -6,7 +6,11 @@ import image4 from '../assets/image4.jpg';
 import image5 from '../assets/image5.jpg';
 import image6 from '../assets/image6.jpg';
 
+import { useTranslation } from 'react-i18next';
+
 export const Works = () => {
+
+    const { t } = useTranslation()
 
     const images = [image1, image2, image3, image4, image5, image6];
 
@@ -21,7 +25,7 @@ export const Works = () => {
 
     return (
         <section name="works" className="px-5 sm:px-10 bg-[#171717]">
-            <h2 className="text-center text-2xl mb-7">[  WORKS  ]</h2>
+            <h2 className="text-center text-2xl mb-7">[  {t("works")}  ]</h2>
             <div className="grid sm:grid-cols-2 lg:grid lg:grid-cols-3 gap-5 py-5 pb-20">
                 {images.map((image, index) => (
                     <div key={index}

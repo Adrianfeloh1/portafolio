@@ -1,8 +1,10 @@
 import profile from "../assets/adrian3.jpg";
-
+import { useTranslation } from 'react-i18next';
 import { Fade } from "react-awesome-reveal";
 
 export const About = () => {
+
+    const { t } = useTranslation()
 
     return (
 
@@ -10,17 +12,10 @@ export const About = () => {
 
             <article className=" h-[520px] sm:h-[400px] md:flex flex-col justify-center bg-[#f55138e0]
                                 md:ml-8 md:h-[650px] md:w-[850px] ">
-                <div className=" p-8 sm:p-16 md:mr-24 ">
-                    <h2 className=" text-2xl mb-8">ABOUT</h2>
-                    <p>As a web developer and user experience (UX) designer,
-                        I find myself at the intersection of technology and design,
-                        where creativity meets functionality. My passion lies in creating
-                        digital products that are not only visually appealing but also
-                        highly intuitive and user-friendly. With a strong foundation
-                        in web application development and a deep understanding
-                        of user-centered design principles, my goal is to build solutions
-                        that enhance people's lives and effectively address challenges.
-                    </p>
+                <div className=" px-8 pt-4 sm:p-16 md:mr-24 ">
+                    <h2 className=" text-2xl mb-5">{t("aboutme")}</h2>
+                    <p>{t("p-about")}</p>
+
                 </div>
             </article>
 

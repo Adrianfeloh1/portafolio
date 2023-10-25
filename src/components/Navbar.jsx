@@ -5,9 +5,9 @@ import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 import { Language } from "./Language";
 
-export const Navbar = () => {    
+export const Navbar = () => {
 
-    const {t} = useTranslation()
+    const { t } = useTranslation()
 
     const [nav, setNav] = useState(false);
 
@@ -29,7 +29,7 @@ export const Navbar = () => {
     const toggleNav = () => setNav(!nav);
 
     return (
-        <nav className="w-screen h-[120px] z-10 fixed bg-[#171717] drop-shadow-2xl">
+        <nav className="w-screen h-[100px] z-10 fixed bg-[#171717] drop-shadow-2xl">
             <div className="pr-4 sm:px-1 flex items-center w-full h-full">
                 <div className="ml-12 w-full flex justify-center items-center sm:justify-between sm:mx-12 sm:mr-12">
 
@@ -42,9 +42,9 @@ export const Navbar = () => {
                         <li><Link className=" cursor-pointer py-5" to="about" smooth={true} offset={-110} duration={600}>{t("about")}</Link></li>
                         <li><Link className=" cursor-pointer py-5" to="works" smooth={true} offset={-150} duration={800}>{t("works")}</Link></li>
                         <li><Link className=" cursor-pointer py-5 mr-5" to="contact" smooth={true} offset={-140} duration={1000}>{t("contact")}</Link></li>
-                        <Language /> 
+                        <Language />
                     </ul>
-                    
+
                 </div>
                 <div className="sm:hidden" onClick={toggleNav}>
                     {!nav ? <RiMenu3Line className="text-4xl w-7 text-[#FEFFFF]" />
@@ -52,12 +52,16 @@ export const Navbar = () => {
                 </div>
             </div>
             {/* Si cambiamos el icono a menú, entonces esconder todo el UL; si está cerrado, entonces mostrar */}
-            <ul className={!nav ? "hidden" : "w-full text-center bg-[#171717] px-5 -mt-3 pb-7"}>
 
+            <ul className={!nav ? "hidden" : "w-full text-center bg-[#171717] px-5 -mt-3 pb-7"}>
+                <div className="flex justify-center">
+                    <Language />
+                </div>
                 <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="home" smooth={true} offset={-10} duration={600}>Home</Link></li>
                 <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="about" smooth={true} offset={-110} duration={600}>About</Link></li>
                 <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="works" smooth={true} offset={-150} duration={800}>Works</Link></li>
                 <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="contact" smooth={true} offset={-120} duration={1000}>Contact</Link></li>
+
 
             </ul>
         </nav>
