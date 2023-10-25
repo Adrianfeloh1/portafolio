@@ -57,12 +57,10 @@ export const Navbar = () => {
                 <div className="flex justify-center">
                     <Language />
                 </div>
-                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="home" smooth={true} offset={-10} duration={600}>Home</Link></li>
-                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="about" smooth={true} offset={-110} duration={600}>About</Link></li>
-                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="works" smooth={true} offset={-150} duration={800}>Works</Link></li>
-                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="contact" smooth={true} offset={-120} duration={1000}>Contact</Link></li>
-
-
+                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="home" smooth={true} offset={-10} duration={600}>{t("home")}</Link></li>
+                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="about" smooth={true} offset={-110} duration={600}>{t("about")}</Link></li>
+                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="works" smooth={true} offset={-150} duration={800}>{t("works")}</Link></li>
+                <li><Link onClick={handleClose} className=" cursor-pointer py-3" to="contact" smooth={true} offset={-120} duration={1000}>{t("contact")}</Link></li>
             </ul>
         </nav>
     );
