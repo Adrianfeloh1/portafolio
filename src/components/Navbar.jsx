@@ -4,6 +4,7 @@ import { RiMenu3Line, RiCloseFill } from "react-icons/ri";
 import logo from "../assets/logo.png";
 import { useTranslation } from "react-i18next";
 import { Language } from "./Language";
+import { LigthMode } from "./LigthMode";
 
 export const Navbar = () => {
 
@@ -37,12 +38,16 @@ export const Navbar = () => {
                         <img className="w-40 md:w-52" src={logo} alt="mi imagen" />
                     </Link>
 
-                    <ul className=" text-[#FEFFFF] hidden sm:flex items-center">
+                    
+
+                    <ul className=" text-[#FEFFFF]  hidden sm:flex items-center">
                         <li><Link className=" cursor-pointer py-5" to="home" smooth={true} offset={-10} duration={600}>{t("home")}</Link></li>
                         <li><Link className=" cursor-pointer py-5" to="about" smooth={true} offset={-110} duration={600}>{t("about")}</Link></li>
                         <li><Link className=" cursor-pointer py-5" to="works" smooth={true} offset={-150} duration={800}>{t("works")}</Link></li>
                         <li><Link className=" cursor-pointer py-5 mr-5" to="contact" smooth={true} offset={-140} duration={1000}>{t("contact")}</Link></li>
+                        <LigthMode/>
                         <Language />
+                        
                     </ul>
 
                 </div>

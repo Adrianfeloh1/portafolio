@@ -4,10 +4,11 @@ import { About } from './components/About';
 import { Works } from './components/Works';
 import { Form } from './components/Form';
 
+
 export const App = () => {
 
   return (
-    <>      
+    <>
       <Navbar />
       <Hero />
       <About />
