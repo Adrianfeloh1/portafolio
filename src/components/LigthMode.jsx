@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { WiMoonAltThirdQuarter } from "react-icons/wi";
+import { PiToggleRightLight } from "react-icons/pi";
 export const LigthMode = () => {
-    const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("ligth");
     
 
     useEffect(() => {
@@ -15,14 +15,16 @@ export const LigthMode = () => {
     }, [theme]);
 
     const handleChangeTheme = () => {
-        setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+        setTheme((prevTheme) => (prevTheme === "dark" ? "ligth" : "dark"));
     };
 
     return (
-        <div className="h-20 flex justify-center items-center bg-white dark:bg-[#171717]">
-            <button onClick={handleChangeTheme} className="bg-[#171717] py-4 rounded-full dark:text-white">             
-                <WiMoonAltThirdQuarter className="text-4xl mr-8"/>
+        <div className="h-20 flex flex-col justify-center items-center bg-[#171717] dark:bg-[#FFFFFF]">
+            <p className="-mb-2">Dark On</p>            
+            <button onClick={handleChangeTheme} className=" rounded-full">             
+                <PiToggleRightLight className="text-5xl text-[#FFFFFF] dark:text-[#171717]"/>
             </button>
+            <p className=" text-[#171717] -mt-2">Ligth On</p>
         </div>
     );
 };

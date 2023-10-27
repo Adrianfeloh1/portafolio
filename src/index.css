@@ -8,15 +8,24 @@
         background-color: #272727;
     }
 
-    li {
-        padding: 1.2rem;
+    li {        
         color: #c2c2c2;
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
     }
 
+    .dark li {
+        color: #171717;
+    }
+
+    .dark li:hover{
+        color: black;
+        font-weight: bold;
+    }
+
     li:hover {
         color: #ffffff;
+        font-weight: bold;
     }
 
     h1,
@@ -29,6 +38,6 @@
 
     p {
         font-family: 'Nunito', sans-serif;
-        font-weight: 300;
-    }    
+        font-weight: 400;
+    }
 }
