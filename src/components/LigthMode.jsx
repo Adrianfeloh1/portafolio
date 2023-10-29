@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { CgToggleSquareOff } from "react-icons/cg";
-import { CgToggleSquare } from "react-icons/cg";
+import { PiToggleRightDuotone } from "react-icons/pi";
+import { PiToggleLeftDuotone } from "react-icons/pi";
 export const LigthMode = () => {
 
     const [theme, setTheme] = useState("ligth");
-    const [buttonText, setButtonText] = useState("Dark");
+    const [buttonText, setButtonText] = useState("dark");
 
     useEffect(() => {
         if (theme === "dark") {
@@ -26,13 +26,15 @@ export const LigthMode = () => {
 
             <button onClick={handleChangeTheme} className="rounded-full flex flex-col justify-center items-center">
                 {buttonText === "dark" ? (
-                    <>                        
-                        <CgToggleSquareOff className="text-3xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />                        
-                    </>
+                    <div className=" flex flex-col items-center ">
+                        <p className=" sm:text-[#c2c2c2] py-1 sm:block hidden"> Dark</p>
+                        <PiToggleRightDuotone className="text-3xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />
+                    </div>
                 ) : (
-                    <>                        
-                        <CgToggleSquare className="text-3xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />                        
-                    </>
+                    <div className=" flex flex-col items-center">
+                        <p className=" sm:text-black py-1 sm:block hidden">Ligth</p>
+                        <PiToggleLeftDuotone className="text-3xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />
+                    </div>
                 )}
             </button>
 

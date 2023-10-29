@@ -1,4 +1,6 @@
 import { useTranslation } from "react-i18next";
+import { useForm } from "react-hook-form";
+
 import { GrLinkedin } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
 import { GrTwitter } from "react-icons/gr";
@@ -7,6 +9,12 @@ export const Form = () => {
 
     const { t } = useTranslation()
 
+    const { register, handleSubmit } = useForm()
+
+    const send = (data) => {
+        console.log(data)
+    }
+
     const currentYear = new Date().getFullYear();
 
     return (
@@ -14,7 +22,7 @@ export const Form = () => {
 
             <article className=" flex flex-col w-2/2 md:w-1/2 text-center md:px-8 lg:px-20">
                 <h2 className=" md:text-2xl lg:text-4xl mb-5 lg:mb-10 uppercase text-[#f55138e0] dark:text-[#066BAE]">
-                {t("discuss")}
+                    {t("discuss")}
                 </h2>
                 <p className="sm:mb-10 mb-5 text-[#c2c2c2] dark:text-[#171717]"> {t("p-discuss")}
                 </p>
@@ -30,19 +38,25 @@ export const Form = () => {
 
             </article>
 
-            <form action="" className=" bg-[#171717] dark:bg-[#FFFFFF] flex flex-col w-full md:w-1/2 px-5 sm:px-10 lg:px-20 border-8 dark:border-[#171717] p-10 text-[white] dark:text-[#171717]">
+            <form onSubmit={handleSubmit(send)} className=" bg-[#171717] dark:bg-[#FFFFFF] flex flex-col w-full md:w-1/2 px-5 sm:px-10 lg:px-20 border-8 dark:border-[#171717] p-10 text-[white] dark:text-[#171717]">
                 <h2 className=" md:text-2xl lg:text-4xl text-center mb-8 text-[#f55138e0] dark:text-[#066BAE]">{t("contant-form")}</h2>
 
                 <label htmlFor="name" className="mb-2">{t("YourName")}</label>
-                <input type="text" id="name" name="Your Name" autoComplete="name" required
+                <input
+                    {...register("name")}
+                    type="text" id="name" name="name" autoComplete="name" required
                     className="outline-none bg-[#171717] dark:bg-[#FFFFFF] border-b dark:border-b-[#171717] mb-6" />
 
                 <label htmlFor="email" className="mb-2">{t("email")}</label>
-                <input type="email" id="email" name="email" autoComplete="email" required
+                <input
+                    {...register("email")}
+                    type="email" id="email" name="email" autoComplete="email" required
                     className="outline-none bg-[#171717] dark:bg-[#FFFFFF] border-b dark:border-b-[#171717] mb-6" />
 
                 <label htmlFor="mesage" className="mb-2">{t("helpYou")}</label>
-                <textarea id="mesage" name="mesage" rows="2" required
+                <textarea
+                    {...register("mesage")}
+                    id="mesage" name="mesage" rows="2"
                     className="outline-none bg-[#171717] dark:bg-[#FFFFFF] border-b dark:border-b-[#171717] mb-6"></textarea>
 
                 <div className=" flex justify-center">
@@ -50,10 +64,10 @@ export const Form = () => {
                         className="bg-[#f55138e0] dark:bg-[#066BAE] w-1/2 font-bold uppercase text-white border-none py-3 ">
                         {t("send")}
                     </button>
-                </div>                
+                </div>
 
             </form>
-            
+
         </section>
     )
 }
