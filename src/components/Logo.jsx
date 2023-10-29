@@ -3,7 +3,7 @@
 export const Logo = () => {
   return (
     <div className="bg-[#171717] flex flex-col justify-center items-center dark:bg-white">
-        <div className="bg-[#DA4A34] text-center w-[80px] h-[50px] rounded-tl-3xl">
+        <div className="bg-[#DA4A34] dark:bg-[#066BAE] text-center w-[80px] h-[50px] rounded-tl-3xl">
             <div>
                 <h1 className=" text-[72px] text-[#171717] relative top-[-30px] right-[15px] tracking-[-14px] dark:text-white">AF</h1>
             </div>

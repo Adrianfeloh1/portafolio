@@ -11,7 +11,7 @@ export const About = () => {
         <section name="about" className=" md:flex md:justify-center md:items-center md:h-[760px] bg-[#171717] dark:bg-[#FFFFFF] ">
 
             <article className=" h-[520px] sm:h-[400px] md:flex flex-col justify-center
-                                bg-[#f55138e0] md:ml-8 md:h-[650px] md:w-[850px] ">
+                                bg-[#f55138e0] dark:bg-[#066BAE] md:ml-8 md:h-[650px] md:w-[850px] ">
                 <div className=" px-8 pt-4 sm:p-16 md:mr-24 ">
                     <h2 className=" text-2xl mb-5">{t("aboutme")}</h2>
                     <p>{t("p-about")}</p>
