@@ -21,7 +21,7 @@ export const About = () => {
 
             <div>
                 <Fade fraction={0.8} triggerOnce={true} >
-                    <img className=" m-auto relative bottom-20 max-h-[370px] sm:max-h-[500px] sm:relative
+                    <img className=" m-auto relative bottom-16 max-h-[370px] sm:max-h-[500px] sm:relative
                         sm:bottom-16 md:relative md:bottom-0 md:right-32 md:max-h-[550px]" src={profile} alt="Image profile" />
                 </Fade>
             </div>

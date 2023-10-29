@@ -15,7 +15,7 @@ export const Language = () => {
     }
 
     return (
-        <div className=' flex sm:flex-col  bg-[#171717] dark:bg-[#FFFFFF] text-[#c2c2c2] dark:text-black md:ml-8 ml-6'>
+        <div className=' flex sm:flex-col  bg-[#171717] dark:bg-[#FFFFFF] text-[#c2c2c2] dark:text-black md:ml-8 ml-2'>
             <div onClick={() => handleChangeLanguage("en")} className='flex items-center py-2 cursor-pointer px-2 sm:px-0 '>
                 <img className="h-6 cursor-pointer mr-2 " src={flagEngland} alt="img inglaterra" />
                 <span>En</span>
