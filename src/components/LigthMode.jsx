@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { PiToggleRightDuotone } from "react-icons/pi";
-import { PiToggleLeftDuotone } from "react-icons/pi";
+import { IoMoonSharp } from "react-icons/io5";
+import { IoSunnyOutline } from "react-icons/io5";
 export const LigthMode = () => {
 
     const [theme, setTheme] = useState("ligth");
@@ -27,13 +27,13 @@ export const LigthMode = () => {
             <button onClick={handleChangeTheme} className="rounded-full flex flex-col justify-center items-center">
                 {buttonText === "dark" ? (
                     <div className=" flex flex-col items-center ">
-                        <p className=" sm:text-[#c2c2c2] py-1 sm:block hidden"> Dark</p>
-                        <PiToggleRightDuotone className="text-3xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />
+                        <p className=" sm:text-[#c2c2c2] py-1 sm:block hidden"> DarkMode</p>
+                        <IoMoonSharp className="text-xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />
                     </div>
                 ) : (
                     <div className=" flex flex-col items-center">
-                        <p className=" sm:text-black py-1 sm:block hidden">Ligth</p>
-                        <PiToggleLeftDuotone className="text-3xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />
+                        <p className=" sm:text-black py-1 sm:block hidden">LigthMode</p>
+                        <IoSunnyOutline className="text-2xl text-[#c2c2c2] hover:text-white dark:text-[#171717]" />
                     </div>
                 )}
             </button>
