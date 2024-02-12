@@ -10,7 +10,6 @@ export const Form = () => {
     const { t } = useTranslation()
 
     const { register, handleSubmit } = useForm()
-
     const send = (data) => {
         console.log(data)
     }
@@ -18,7 +17,7 @@ export const Form = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <section name="contact" className=" bg-[#171717] dark:bg-white flex flex-col md:flex md:flex-row justify-center items-center md:pt-10 px-10 md:pb-32 pb-20">
+        <section name="contact" className=" bg-[#171717] dark:bg-white flex flex-col md:flex md:flex-row justify-center items-center md:pt-10 px-5 sm:px-10 md:pb-32 pb-20">
 
             <article className=" flex flex-col w-2/2 md:w-1/2 text-center md:px-8 lg:px-20">
                 <h2 className=" md:text-2xl lg:text-4xl mb-5 lg:mb-10 uppercase text-[#f55138e0] dark:text-[#066BAE]">

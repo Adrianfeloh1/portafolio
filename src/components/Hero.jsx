@@ -29,7 +29,7 @@ export const Hero = () => {
                     </h1>
                 </Fade>
                 <article>
-                    <p className="text-lg mx-5 md:text-2xl text-center min-w-min">
+                    <p className="text-lg mx-10 md:text-xl text-center ">
                         {t("hero")}
                     </p>
                 </article>
