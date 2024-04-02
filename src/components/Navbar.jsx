@@ -35,12 +35,12 @@ export const Navbar = () => {
             <div className="pr-4 sm:px-1 flex items-center w-full h-full">
                 <div className="ml-12 w-full flex justify-center items-center sm:justify-between sm:mx-5 md:mx-20 sm:mr-10">
 
-                    <Link className=" cursor-pointer" to="home" smooth={true} offset={-10} duration={600}>
+                    <Link className=" cursor-pointer" to="home" smooth={true} offset={-10} onClick={scroll.scrollToTop}>
                         <Logo />
                     </Link>
 
                     <ul className=" text-[#FEFFFF] hidden sm:flex items-center">
-                        <li><Link className=" cursor-pointer py-5 p-4 md:p-7" to="home" smooth={true} offset={-10} duration={600}>{t("home")}</Link></li>
+                        <li><Link className=" cursor-pointer py-5 p-4 md:p-7" to="home" smooth={true} offset={-10} duration={800}>{t("home")}</Link></li>
                         <li><Link className=" cursor-pointer py-5 p-4 md:p-7" to="about" smooth={true} offset={-110} duration={600}>{t("about")}</Link></li>
                         <li><Link className=" cursor-pointer py-5 p-4 md:p-7" to="works" smooth={true} offset={-150} duration={800}>{t("works")}</Link></li>
                         <li><Link className=" cursor-pointer py-5 p-4 md:p-7 mr-5" to="contact" smooth={true} offset={-140} duration={1000}>{t("contact")}</Link></li>

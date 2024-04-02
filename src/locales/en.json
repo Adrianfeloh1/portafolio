@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "aboutme": "About me",
+    "works": "Works",
     "front-end-works": "[ Front-end works ]",
     "UX-works": "[ UX works ]",
     "contact": "Contact",
@@ -15,6 +16,6 @@
     "YourName": "Your Name",
     "email": "Email",
     "helpYou":"How can I assist you?",
-    "send": "SEND"
-
+    "send": "SEND",
+    "required": "Required"
 }

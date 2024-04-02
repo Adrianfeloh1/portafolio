@@ -2,6 +2,7 @@
     "hello": "Hola a todos!",
     "home": "Inicio",
     "about": "Acerca",
+    "works": "Trabajos",
     "aboutme": "Acerca de mi",
     "front-end-works": "[ Trabajos Front-end ]",
     "UX-works": "[ Trabajos UX ]",
@@ -15,5 +16,6 @@
     "YourName": "Tu nombre",
     "email": "Correo",
     "helpYou":"Cómo puedo ayudarte?",
-    "send": "ENVIAR"
+    "send": "ENVIAR",
+    "required": "Requerido"
 }
