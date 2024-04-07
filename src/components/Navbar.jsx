@@ -40,13 +40,12 @@ export const Navbar = () => {
                     </Link>
 
                     <ul className=" text-[#FEFFFF] hidden sm:flex items-center">
-                        <li><Link className=" cursor-pointer py-5 p-4 md:p-7" to="home" smooth={true} offset={-10} duration={800}>{t("home")}</Link></li>
-                        <li><Link className=" cursor-pointer py-5 p-4 md:p-7" to="about" smooth={true} offset={-110} duration={600}>{t("about")}</Link></li>
-                        <li><Link className=" cursor-pointer py-5 p-4 md:p-7" to="works" smooth={true} offset={-150} duration={800}>{t("works")}</Link></li>
-                        <li><Link className=" cursor-pointer py-5 p-4 md:p-7 mr-5" to="contact" smooth={true} offset={-140} duration={1000}>{t("contact")}</Link></li>
+                        <li><Link className=" cursor-pointer py-5 p-4 md:p-5" to="home" smooth={true} offset={-10} duration={800}>{t("home")}</Link></li>
+                        <li><Link className=" cursor-pointer py-5 p-4 md:p-5" to="about" smooth={true} offset={-110} duration={600}>{t("about")}</Link></li>
+                        <li><Link className=" cursor-pointer py-5 p-4 md:p-5" to="works" smooth={true} offset={-150} duration={800}>{t("works")}</Link></li>
+                        <li><Link className=" cursor-pointer py-5 p-4 md:p-5 lg:mr-10" to="contact" smooth={true} offset={-140} duration={1000}>{t("contact")}</Link></li>
                         <LigthMode />
                         <Language />
-
                     </ul>
 
                 </div>
