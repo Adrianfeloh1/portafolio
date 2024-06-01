@@ -20,6 +20,11 @@ export const Form = () => {
             });
             setSuccessMessage(t("success-message"));
             reset();  // Resetea el formulario después de enviar
+
+            // Establece un temporizador para borrar el mensaje después de 3 segundos
+            setTimeout(() => {
+                setSuccessMessage("");
+            }, 3000);
         } catch (e) {
             console.error("Error al enviar el mensaje: ", e);
             setSuccessMessage(t("Hubo un error al enviar el mensaje"));
@@ -65,7 +70,9 @@ export const Form = () => {
                     {t("contant-form")}
                 </h2>
 
-                {successMessage && <p className=" text-xl text-green-500 text-center -mb-7">{t("success-message")}</p>}
+                {successMessage && (
+                    <p className="text-xl text-green-500 text-center -mt-7">{successMessage}</p>
+                )}
 
                 <label htmlFor="name" className="mb-2">
                     {t("YourName")}
