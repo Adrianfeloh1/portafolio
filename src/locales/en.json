@@ -21,5 +21,6 @@
     "email": "Email",
     "helpYou":"How can I assist you?",
     "send": "SEND",
-    "required": "Required"
+    "required": "Required",
+    "success-message": "Message sent"
 }

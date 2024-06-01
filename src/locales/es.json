@@ -21,5 +21,6 @@
     "email": "Correo",
     "helpYou": "Cómo puedo ayudarte?",
     "send": "ENVIAR",
-    "required": "Requerido"
+    "required": "Requerido",
+    "success-message": "Mensaje enviado"
 }
