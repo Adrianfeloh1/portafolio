@@ -5,7 +5,7 @@ import { RiMenu3Line, RiCloseFill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 import { Language } from "./Language";
 import { LigthMode } from "./LigthMode";
-import { Logo } from "./logo";
+import { Logo } from "./Logo";
 
 export const Navbar = () => {
 
